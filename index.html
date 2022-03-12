@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random cat</title>
+</head>
+<body>
+    
+    <div class="results">
+        <div id="cat_result" class="result">
+          <p>Random Cat</p>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="cat_btn">Get Cat</button>
+    </div>
+
+
+</body>
+
+<script>
+
+    const cat_btn = document.getElementById("cat_btn");
+    const cat_result = document.getElementById("cat_result");
+
+    cat_btn.addEventListener("click",getRandomCat);
+
+    function getRandomCat() {
+        fetch("https://random.dog/woof.json")
+        .then((res) => res.json())
+        .then((data) => {
+            cat_result.innerHTML = `<img src=${data.url} alt="cat" />`;
+        });
+    }
+
+
+</script>
+
+</html>
