@@ -3,8 +3,12 @@
 body {
   background-image: linear-gradient(
     180deg,
-    rgb(241, 154, 154) 23.8%,
-    rgb(175, 28, 28) 92%
+    
+    rgb(231, 187, 93) 20.8%,
+    rgb(231, 185, 93) 19.2%,
+    rgb(231, 186, 66)20%,
+    rgb(102, 250, 218) 40%
+    
   );
   font-family: "Open Sans", sans-serif;
   display: flex;
@@ -12,17 +16,21 @@ body {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  margin: 0;
+  margin: 10;
 }
 
 .results {
   display: flex;
+  min-height: 55vh;
+  min-width: none;
+  padding: auto;
+  background-color: lightgoldenrodyellow;
   align-items: center;
   justify-content: center;
 }
 
 .result {
-  background-color: #fff;
+  background-color:hwb(38 60% 30%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,26 +46,33 @@ body {
 }
 
 .buttons {
+  background-origin: padding-box;
   display: flex;
+  border-color: brown;
   align-items: center;
   justify-content: center;
 }
 
 button {
-  background-color: rgb(231, 221, 221);
+  background-color: rgb(32, 168, 116);
   border: 0;
-  border-radius: 4px;
-  color: rgb(155, 152, 152);
-  font-size: 18px;
+  border-color: brown;
+  border-radius: 1000px;
+  color: rgb(41, 9, 9);
+  font-size: 30px;
   padding: 10px;
   margin: 60px;
-  width: 200px;
+  width: 150px;
 }
 
 button:active {
-  transform: scale(0.98);
+  border-color: black;
+  flex-grow: inherit;
+  background-clip: border-box;
+  transform: scale(1.28);
 }
 
 button:focus {
   outline: none;
+  border-color: black;
 }
