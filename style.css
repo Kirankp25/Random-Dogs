@@ -4,9 +4,7 @@ body {
   background-image: linear-gradient(
     180deg,
     
-    rgb(231, 187, 93) 20.8%,
-    rgb(231, 185, 93) 19.2%,
-    rgb(231, 186, 66)20%,
+    rgb(102, 93, 231) 20.8%,
     rgb(102, 250, 218) 40%
     
   );
@@ -18,6 +16,10 @@ body {
   height: 100vh;
   margin: 10;
 }
+h1{
+  font-family: ;
+  color: rgb(30, 27, 28);
+}
 
 .results {
   display: flex;
@@ -27,6 +29,7 @@ body {
   background-color: lightgoldenrodyellow;
   align-items: center;
   justify-content: center;
+  border-radius: 15px;
 }
 
 .result {
